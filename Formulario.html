@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <h2>Formulario de contacto</h2>
-    <form>
+    <h2 class="header">Formulario de contacto</h2>
+    <link rel="stylesheet" href="css/personalizacion.css">  
+</head>
+<body>
+    <form class="custom-form">
         <label for="name">Nombre:</label>
        <input type="text" id="name" pattern="[A-Za-z]" name="user_name" required/><br><br>
 
@@ -32,12 +35,8 @@
         <label for="check">Politica de datos</label>
         <input type="checkbox" id="check" name="user_check" required/><br><br>
 
-        <input type="button" id="buton" value="ENVIAR">
-
-
+        <input type="button" id="button" value="ENVIAR">
+        
     </form>
-</head>
-<body>
-    
 </body>
 </html>

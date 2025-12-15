@@ -1,0 +1,28 @@
+.custom-form{
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+.custom-form label{
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+.custom-form input[type=name]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.header{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background: url("https://cdn.wallpapersafari.com/98/77/9ZjQEA.jpg")
+}
+
