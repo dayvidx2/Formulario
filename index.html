@@ -12,18 +12,18 @@
 
         <div>
             <label for="name">Nombre:</label>
-            <input type="text" id="name" pattern="[A-Za-z]" name="user_name" required/>
+            <input type="text" id="name" pattern="[A-Za-z]" name="user_name" required  placeholder="Nombre ejemplo"/>
         </div>
 
         <div>
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" pattern="[A-Za-z]" name="user_apellido" required/>
+            <input type="text" id="apellido" pattern="[A-Za-z]" name="user_apellido" required  placeholder="Apellido ejemplo"/>
         </div>
 
         <div>
             <label for="tipo">Tipo de documento</label>
             <select for="text" id="tipo" required>
-                <option value="null"></option>
+                <option value="" disabled>Selecione...</option>
                 <option value="CC">cedula</option>
                 <option value="TI">Tarjeta de identidad</option>
                 <option value="PA">Pasaporte</option>
@@ -32,27 +32,57 @@
 
         <div>
             <label for="numero">Numero de documento</label>
-            <input type="number" id="numero" pattern="[0-9]+" name="user_numero" required/>
+            <input type="text" id="numero" pattern="[0-9]+" name="user_numero" required  placeholder="1028662427"/>
         </div>
 
         <div>
             <label for="numero">Correo</label>
-            <input type="text" id="correo">
+            <input type="text" id="correo" placeholder="Ejemplo1@gmail.com">
         </div>
 
         <div>
-            <label for="numero">Pais Domicilio</label>
-            <input type="text" id="pais">
+            <label for="numero">Pais</label>
+            <select type="text" id="pais" required>
+                <option value="" disabled>Selecione...</option>
+                <option value="169">Colombia</option>
+                <option value="493">México</option>
+                <option value="105">Chile</option>
+            </select>
         </div>
 
         <div>
-            <label for="numero">Ciudad Domicilio</label>
-            <input type="text" id="ciudad">
+            <label for="numero">Ciudad</label>
+            <select type="text" id="ciudad">
+
+                <optgroup label="Colombia">
+                    <option value="11001">Bogotá D.C.</option>
+                    <option value="05001">Medellín</option>
+                    <option value="76001">Cali</option>
+                    <option value="13001">Cartagena</option>
+                    <option value="47001">Santa Marta</option>
+                </optgroup>
+
+                <optgroup label="México">
+                    <option value="09007">Ciudad de México</option>
+                    <option value="14039">Guadalajara</option>
+                    <option value="19039">Monterrey</option>
+                    <option value="21114">Puebla</option>
+                    <option value="02004">Tijuana</option>
+                </optgroup>
+
+                <optgroup label="Chile">
+                    <option value="13101">Santiago</option>
+                    <option value="05101">Valparaiso</option>
+                    <option value="02101">Antofagasta</option>
+                    <option value="05109">Viña del Mar</option>
+                    <option value="12101">Punta Arenas</option>
+                </optgroup>
+            </select>
         </div>
 
         <div>
             <label for="celular">Numero de celular</label>
-            <input type="number" id="celular" pattern="[0-9]+" name="user_celular" required/>
+            <input type="text" id="celular" pattern="[0-9]+" name="user_celular" required placeholder="3007459273"/>
         </div>
 
         <div>
