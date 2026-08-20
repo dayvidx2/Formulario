@@ -5,47 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <h2 class="header">Formulario de contacto</h2>
-    <link rel="stylesheet" href="css/personalizacion.css">  
+    <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
     <form class="custom-form">
-        <label for="name">Nombre:</label>
-       <input type="text" id="name" pattern="[A-Za-z]" name="user_name" required/><br><br>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" pattern="[A-Za-z]" name="user_apellido" required/> <br><br>
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" pattern="[A-Za-z]" name="user_name" required/>
+        </div>
 
-        <label for="tipo">Tipo de documento</label>
-        <select for="text" id="tipo" required>
-            <option value="null"></option>
-            <option value="CC">cedula</option>
-            <option value="TI">Tarjeta de identidad</option>
-            <option value="PA">Pasaporte</option>
-        </select><br><br>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" pattern="[A-Za-z]" name="user_apellido" required/>
+        </div>
 
-        <label for="numero">Numero de documento</label>
-        <input type="number" id="numero" pattern="[0-9]+" name="user_numero" required/><br><br>
+        <div>
+            <label for="tipo">Tipo de documento</label>
+            <select for="text" id="tipo" required>
+                <option value="null"></option>
+                <option value="CC">cedula</option>
+                <option value="TI">Tarjeta de identidad</option>
+                <option value="PA">Pasaporte</option>
+            </select>
+        </div>
 
-        <label for="numero">Correo</label>
-        <input type="text" id="correo"><br><br>
+        <div>
+            <label for="numero">Numero de documento</label>
+            <input type="number" id="numero" pattern="[0-9]+" name="user_numero" required/>
+        </div>
 
-        <label for="numero">Pais Domicilio</label>
-        <input type="text" id="pais"><br><br>
+        <div>
+            <label for="numero">Correo</label>
+            <input type="text" id="correo">
+        </div>
 
-        <label for="numero">Ciudad Domicilio</label>
-        <input type="text" id="ciudad"><br><br>
-        
-        <label for="celular">Numero de celular</label>
-        <input type="number" id="celular" pattern="[0-9]+" name="user_celular" required/><br><br>
+        <div>
+            <label for="numero">Pais Domicilio</label>
+            <input type="text" id="pais">
+        </div>
 
-        <label for="fecha">Fecha de nacimiento</label>
-        <input type="date" max="2028-12-31" id="fecha" name="user_fecha" required/><br><br>
+        <div>
+            <label for="numero">Ciudad Domicilio</label>
+            <input type="text" id="ciudad">
+        </div>
 
-        <label for="check">Politica de datos</label>
-        <input type="checkbox" id="check" name="user_check" required/><br><br>
+        <div>
+            <label for="celular">Numero de celular</label>
+            <input type="number" id="celular" pattern="[0-9]+" name="user_celular" required/>
+        </div>
 
-        <input type="button" id="button" value="ENVIAR">
-        
+        <div>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" max="2028-12-31" id="fecha" name="user_fecha" required/>
+        </div>
+
+        <div>
+            <label for="check">Politica de datos</label>
+            <input type="checkbox" id="check" name="user_check" required/>
+        </div>
+
+        <div>
+            <input type="button" id="button" value="ENVIAR">
+        </div>
+
     </form>
 </body>
 </html>
