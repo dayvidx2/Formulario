@@ -6,18 +6,18 @@
     <title>Formulario</title>
     <h2 class="header">Formulario de contacto</h2>
     <link rel="stylesheet" href="css/style.css">  
-</head>
+</head>     
 <body>
     <form id="formulario" action="#" class="custom-form">
 
         <div>
             <label for="name">Nombre:</label>
-            <input type="text" id="name" pattern="[A-Za-z]" name="user_name" required  placeholder="Nombre ejemplo"/>
+            <input type="text" id="name"  name="user_name" required  placeholder="Nombre ejemplo"/>
         </div>
 
         <div>
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" pattern="[A-Za-z]" name="user_apellido" required  placeholder="Apellido ejemplo"/>
+            <input type="text" id="apellido" name="user_apellido" required  placeholder="Apellido ejemplo"/>
         </div>
 
         <div>
@@ -32,7 +32,7 @@
 
         <div>
             <label for="numero">Numero de documento</label>
-            <input type="text" id="numero" pattern="[0-9]+" name="user_numero" required  placeholder="1028662427"/>
+            <input type="number" id="numero" pattern="[0-9] {6,12}" name="user_numero" required  placeholder="1028662427"/>
         </div>
 
         <div>
@@ -96,9 +96,33 @@
         </div>
 
         <div>
-            <input type="button" id="button" value="ENVIAR">
+    <label for="valorA">Valor A:</label>
+    <input type="text" id="valorA" required>
+
+    <select id="tipoA">
+        <option value="number">Número</option>
+        <option value="string">String</option>
+        <option value="boolean">Booleano</option>
+    </select>
+    </div>
+
+    <div>
+        <label for="valorB">Valor B:</label>
+        <input type="text" id="valorB" required>
+
+        <select id="tipoB">
+            <option value="number">Número</option>
+            <option value="string">String</option>
+            <option value="boolean">Booleano</option>
+        </select>
+    </div>
+
+        <div>
+            <button type="submit" class="btn-submit">Enviar</button>
         </div>
 
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
